@@ -66,14 +66,23 @@ A minimal web interface using **Flask + HTML** to allow users to:
 
 ## 📁 Project Structure
 
-├── app.py # Flask server
-├── model.pkl # Trained Random Forest model
-├── notebook.ipynb # Jupyter Notebook with full EHO & training
-├── templates/
-│ └── index.html # Frontend HTML form
-├── static/ # (Optional) Images, CSS
-├── requirements.txt # Python dependencies
-└── README.md # Project overview
+Soil-Quality-EHO-Project/
+│
+├── app.py                      # Flask backend logic
+├── rf_model.pkl                # Trained Random Forest model
+├── Dataset_Exploration.ipynb  # Main notebook with ML + EHO logic
+├── Untitled.ipynb             # Unused - consider deleting or merging
+├── Crop_Recommendation.csv    # Dataset used for training
+├── README.md                  # Full project overview and documentation
+├── website.png                # Screenshot for README UI preview
+│
+├── templates/                 # HTML templates folder
+│   └── index.html             # Main UI form for user input
+│
+├── .ipynb_checkpoints/        # Auto-created by Jupyter (can be gitignored)
+│
+└── .gitignore                 # To ignore unwanted files during Git push
+
 
 ## 📈 Results
 
