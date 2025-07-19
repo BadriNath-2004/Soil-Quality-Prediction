@@ -65,7 +65,7 @@ A minimal web interface using **Flask + HTML** to allow users to:
 ---
 
 ## 📁 Project Structure
-
+<pre>
 Soil-Quality-EHO-Project/
 │
 ├── app.py                      # Flask backend logic
@@ -82,7 +82,7 @@ Soil-Quality-EHO-Project/
 ├── .ipynb_checkpoints/        # Auto-created by Jupyter (can be gitignored)
 │
 └── .gitignore                 # To ignore unwanted files during Git push
-
+</pre>
 
 ## 📈 Results
 
