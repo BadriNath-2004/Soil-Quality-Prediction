@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Quality Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card shadow-lg p-4">
+            <h2 class="text-center mb-4">🌱 Soil Quality Prediction</h2>
+            <form method="post">
+                <div class="mb-3">
+                    <label for="nitrogen" class="form-label">Nitrogen (N)</label>
+                    <input type="number" class="form-control" id="nitrogen" name="Nitrogen" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phosphorus" class="form-label">Phosphorus (P)</label>
+                    <input type="number" class="form-control" id="phosphorus" name="Phosphorus" required>
+                </div>
+                <div class="mb-3">
+                    <label for="potassium" class="form-label">Potassium (K)</label>
+                    <input type="number" class="form-control" id="potassium" name="Potassium" required>
+                </div>
+                <div class="mb-3">
+                    <label for="temperature" class="form-label">Temperature (°C)</label>
+                    <input type="number" step="0.01" class="form-control" id="temperature" name="Temperature" required>
+                </div>
+                <div class="mb-3">
+                    <label for="humidity" class="form-label">Humidity (%)</label>
+                    <input type="number" step="0.01" class="form-control" id="humidity" name="Humidity" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pH" class="form-label">pH Value</label>
+                    <input type="number" step="0.01" class="form-control" id="pH" name="pH_Value" required>
+                </div>
+                <div class="mb-3">
+                    <label for="rainfall" class="form-label">Rainfall (mm)</label>
+                    <input type="number" step="0.01" class="form-control" id="rainfall" name="Rainfall" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Predict Soil Quality</button>
+            </form>
+            
+            {% if prediction is not none %}
+                <div class="alert alert-success mt-4 text-center">
+                    <h4>Predicted SQI: {{ prediction }}</h4>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+</body>
+</html>

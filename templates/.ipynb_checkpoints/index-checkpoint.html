@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Quality Prediction</title>
+</head>
+<body>
+    <h2>Enter Soil Data for Prediction</h2>
+    <form method="post">
+        <input type="text" name="Nitrogen" placeholder="Nitrogen" required><br><br>
+        <input type="text" name="Phosphorus" placeholder="Phosphorus" required><br><br>
+        <input type="text" name="Potassium" placeholder="Potassium" required><br><br>
+        <input type="text" name="Temperature" placeholder="Temperature" required><br><br>
+        <input type="text" name="Humidity" placeholder="Humidity" required><br><br>
+        <input type="text" name="pH_Value" placeholder="pH Level" required><br><br>
+        <input type="text" name="Rainfall" placeholder="Rainfall" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+        <h3>Predicted Soil Quality Index: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
