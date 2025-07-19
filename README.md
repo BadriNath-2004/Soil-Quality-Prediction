@@ -60,8 +60,7 @@ A minimal web interface using **Flask + HTML** to allow users to:
 - See results in real time
 
 ### Demo Preview:
-![UI Screenshot](images/ui-preview.png)  
-*Note: Replace with your actual screenshot*
+![Alt Text](/website.png)
 
 ---
 
@@ -77,8 +76,6 @@ A minimal web interface using **Flask + HTML** to allow users to:
 └── README.md # Project overview
 
 ## 📈 Results
-![Alt Text](/website.png)
-
 
 | Metric       | Value      |
 |--------------|------------|
